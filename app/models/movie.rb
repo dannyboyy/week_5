@@ -1,4 +1,5 @@
 class Movie < ActiveRecord::Base
+  searchkick
   belongs_to :user
   has_many :reviews
 
@@ -6,4 +7,5 @@ class Movie < ActiveRecord::Base
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
   ratyrate_rateable 'rating'
+
 end

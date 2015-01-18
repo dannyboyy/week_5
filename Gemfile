@@ -12,6 +12,7 @@ gem 'devise', '~> 3.4.1'
 gem 'paperclip', '~> 4.2.1'
 gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'ratyrate', '~> 1.2.2.alpha'
+gem 'searchkick', '~> 0.8.5'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
