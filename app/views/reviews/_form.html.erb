@@ -11,9 +11,8 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :rating %><br>
-    <%= f.number_field :rating %>
+  <p>Rating</p>
+  <div class="star-rating"><%= rating_for @movie, 'rating', disable_after_rate: false, cancel_place: 'right' %>
   </div>
   <div class="field">
     <%= f.label :comment %><br>

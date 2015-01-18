@@ -25,6 +25,11 @@ class ReviewsController < ApplicationController
 
   def update
     @review.update(review_params)
+    if @review.save
+      redirect_to @movie
+    else
+      render 'edit'
+    end
   end
 
   def destroy

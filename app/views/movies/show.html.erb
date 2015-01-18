@@ -41,7 +41,7 @@
         <% else %>
           <% @reviews.each do |review| %>
             <div class="reviews">
-              <p><%= review.rating %></p>
+              <div class="star-rating"><%= rating_for @movie, 'rating', disable_after_rate: false, cancel_place: 'right' %></div>
               <p><%= review.comment %></p>
             </div>
           <% end %>
